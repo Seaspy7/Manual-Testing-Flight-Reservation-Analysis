@@ -1,5 +1,20 @@
-1. Application should allow to create orders, update orders, delete orders.
-2. From the Main application window the user can create a new order and insert it to
+1. To login into the application use agent name “bart” and password “mercury”. All
+other agent names &amp; passwords are considered as invalid.
+
+If the agent name or the password is skipped, the error message is displayed.
+If invalid agent name or password is entered, the error message is displayed.
+The user is re-prompted to re-enter the agent name and password. There are only
+4 attempts to enter invalid password. (Please note, there is no limitation for
+entering invalid Agent name). 
+
+After the 4th attempt of entering invalid password, the application displays an error “Login Unsuccessful” and quits. The user
+should open Login screen again and re-enter Agent name and password.
+
+2. Application’s Main screen is “Flight Reservation”, which will be displayed after
+successful login:
+
+3. Application should allow to create orders, update orders, delete orders.
+4. From the Main application window the user can create a new order and insert it to
 the Database using “Insert Order” button. The user can also update the existing
 order and delete it.
 There are 2 drop-down menus: “File” and “Analysis” (We are not testing “Edit”
@@ -9,5 +24,3 @@ a) Open Order
 Under “Analysis” drop-down menu there are 2 options:
 a) Report
 b) Graph
-3. To login into the application use agent name “bart” and password “mercury”. All
-other agent names &amp; passwords are considered as invalid.
