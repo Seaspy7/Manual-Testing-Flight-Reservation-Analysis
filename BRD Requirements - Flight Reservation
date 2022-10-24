@@ -1,0 +1,13 @@
+1. Application should allow to create orders, update orders, delete orders.
+2. From the Main application window the user can create a new order and insert it to
+the Database using “Insert Order” button. The user can also update the existing
+order and delete it.
+There are 2 drop-down menus: “File” and “Analysis” (We are not testing “Edit”
+and “Help”)
+Under “File” drop-down menu there is 1 option:
+a) Open Order
+Under “Analysis” drop-down menu there are 2 options:
+a) Report
+b) Graph
+3. To login into the application use agent name “bart” and password “mercury”. All
+other agent names &amp; passwords are considered as invalid.
