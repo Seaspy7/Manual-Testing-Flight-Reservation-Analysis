@@ -1,0 +1,64 @@
+Creating Test Cases based off BRD-Flight Reseravtion requirements file.
+----------------------------------------------------------------------
+
+
+
+Unit 1 Login
+------------
+
+Test Case 1.1: Successful Login
+
+  Test Data: Open Login Application
+  Test Result: Application is opened
+  
+  Test Data: Enter username: "bart" and Enter password: "mercury"
+  Test Result: Succesful Login and main screen is displayed 
+  
+Test Case 1.2: Wrong Username
+
+  Test Data: Open Login Application
+  Test Result: Application is opened
+  
+  Test Data: Enter username: "BART" (all uppercase) and Enter valid password: "mercury"
+  Test Result: Error Message and the user is re-prompted to re-enter the agent name and password.
+  
+  Test Data: Enter username: "John" and Enter valid password: "mercury"
+  Test Result: Error Message and the user is re-prompted to re-enter the agent name and password.
+  
+  Test Data: Skip username and Enter valid password: "mercury"
+  Test Result: Error Message and the user is re-prompted to re-enter the agent name and password.
+  
+  Test Data: Enter only symbols as username and Enter valid password: "mercury"
+  Test Result: Error Message and the user is re-prompted to re-enter the agent name and password.
+  
+  Test Data: Enter only numbers as username and Enter valid password: "mercury"
+  Test Result: Error Message and the user is re-prompted to re-enter the agent name and password.
+  
+Test Case 1.3: Wrong Password
+
+  Test Data: Open Login Application
+  Test Result: Application is opened
+  
+  Test Data: Enter valid username: "bart" and Enter wrong password: "MERCURY" (all uppercase)
+  Test Result: Error Message is displayed and the user is re-prompted to re-enter the agent name and password.
+  
+  Test Data: Enter valid username: "bart" and Enter wrong password: "john"
+  Test Result: Error Message is displayed and the user is re-prompted to re-enter the agent name and password.
+  
+  Test Data: Enter valid username: "bart" and Enter wrong password: "&$*@*" (symbols only)
+  Test Result: Error Message is displayed and the user is re-prompted to re-enter the agent name and password.
+  
+  Test Data: Enter valid username: "bart"  and Enter wrong password: "1234" (numbers only)
+  Test Result: Error Message is displayed and the user is re-prompted to re-enter the agent name and password.
+  
+  Test Data: Enter valid username: "bart" and Skip password
+  Test Result: Error Message is displayed and the user is re-prompted to re-enter the agent name and password.
+  
+ Test Data: Enter valid username: "bart" and Enter wrong password 4 times
+ Test Result: the application displays an error “Login Unsuccessful” and closes.
+  
+  
+
+  
+  
+   
