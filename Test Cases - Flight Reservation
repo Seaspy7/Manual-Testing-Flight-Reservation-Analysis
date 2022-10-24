@@ -3,7 +3,7 @@ Creating Test Cases based off BRD-Flight Reseravtion requirements file.
 
 
 
-Unit 1 Login
+Unit 1.0 Login
 ------------
 
 Test Case 1.1: Successful Login
@@ -56,7 +56,55 @@ Test Case 1.3: Wrong Password
   
  Test Data: Enter valid username: "bart" and Enter wrong password 4 times
  Test Result: the application displays an error “Login Unsuccessful” and closes.
+ 
+ 
+ Unit 2.0 Application Main Screen
+ ----------------------------------
+ 
+ Test Case 2.1: Date of Flight
+ 
+  Test Data: Login to Application Successfully
+  Test Result: Main Screen is displayed
   
+  Test Data: At Main screen enter future date of flight in format "MM/DD/YY" and Select city from "Fly From"
+  Test Result: No Error
+  
+  Test Data: Enter current date
+  Test Result: Error
+  
+  Test Data: Enter past date
+  Test Result: Error
+  
+  Test Data: Enter Letters
+  Test Result: Error
+  
+  Test Data: Enter Symbols
+  Test Result: Error
+  
+Test Case 2.2: Fly From/Fly To
+
+  Test Data: Select "Date" Do not Select "Fly From" Do not "Fly To"
+  Test Result: "Flight" Button is disabled
+  
+  Test Data: Select "Date and Select "Fly From", Do not  Select "Fly To"
+  Test Result: "Flight" Button is disabled
+  
+  Test Data: Select "Date Do not select "Fly From" Select "Fly To"
+  Test Result: "Flight" Button is disabled
+  
+  Test Data: Do not Select "Date Select "Fly From" and Do not Select "Fly To"
+  Test Result: "Flight" Button is disabled
+  
+  Test Data: Do not Select "Date" Select "Fly From" and Select "Fly To"
+  Test Result: "Flight" Button is disabled
+  
+  Test Data: Select Date, Select Fly From and Select Fly To
+  Test Result: "Flight" Button is enabled
+  
+  
+Test Case 2.3: Flight Table
+
+  Test Data:
   
 
   
