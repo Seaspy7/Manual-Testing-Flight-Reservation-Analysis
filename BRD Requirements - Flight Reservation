@@ -1,5 +1,5 @@
-                                           Requirements for Flight Reservation Application 
-                                          -------------------------------------------------
+                                      Requirements for Flight Reservation Application 
+                                      -------------------------------------------------
                                           
                                           
 
@@ -18,14 +18,41 @@ should open Login screen again and re-enter Agent name and password.
 2. Application’s Main screen is “Flight Reservation”, which will be displayed after
 successful login:
 
-3. Application should allow to create orders, update orders, delete orders.
-4. From the Main application window the user can create a new order and insert it to
-the Database using “Insert Order” button. The user can also update the existing
-order and delete it.
-There are 2 drop-down menus: “File” and “Analysis” (We are not testing “Edit”
-and “Help”)
-Under “File” drop-down menu there is 1 option:
-a) Open Order
-Under “Analysis” drop-down menu there are 2 options:
-a) Report
-b) Graph
+3. “Date of Flight” field has the following format: MM/DD/YY.
+    The order can be created only for the date which is greater than the current date.
+    The current date/time is according to the system date/time. If the date is today or
+    the previous date – display an error message upon selecting the city from “Fly
+    From”. The month can be from “1” to “12”. If more than “12” – the error message
+    appears upon selecting the city from “Fly From”. The day should be from “1” to
+    “31”. If more than “31” – the error message appears upon selecting the city from
+    “Fly From”. The field “Date of Flight” can not be skipped.
+
+4. The “Fly From” &amp; “Fly To” are selections. If at least one of the fields (“Date of
+Flight”, “Fly From”, “Fly To”) are not entered or selected, the button “Flight” is
+disabled. The button “Flight” becomes enabled when all three fields prior are
+entered or selected.
+
+5.  By pressing the button “Flight” the user brings the “Flights Table”.
+    This is a selection. The user should select any flight and press “OK”. All data is
+    automatically generated from the selection to the Main screen. This data is not
+    editable.
+    
+6. “Name” field should accept only alphabetic characters. Numeric and special
+    characters are invalid input. If invalid input – the “Insert Order” button should be
+    disabled. If valid input - the “Insert Order” button should be enabled.
+
+9. The default setting for the “Class” is “Economy”. It is automatically selected
+    during the new order creation. The user can switch the setting from “Economy”
+    class to “Business” or “First” and the ticket price is changed accordingly.
+
+10.
+
+  The maximum tickets created for the one order is 10. If more than 10 tickets in 1
+    order, display an error message when the “Insert Order” button is pressed. The
+    “Tickets” field accepts numeric only. If alphabetic or special characters are
+    entered and the “Insert Order” button is pressed, the error message appears.
+    During the order creation the default number of tickets is “1”.
+    
+    
+11. When “Insert Order” button is pressed the application displays a progress bar and
+    then the final message “Insert Done…”.
