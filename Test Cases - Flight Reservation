@@ -104,9 +104,53 @@ Test Case 2.2: Fly From/Fly To
   
 Test Case 2.3: Flight Table
 
-  Test Data:
+  Test Data: Click Button "Flight"
+  Test Result: Flight table is disaplyed
   
+  Test Data: Select any flight and Press "OK"
+  Test Result: All data is automatically generated from the selection to the Main screen.
+  
+  Test Data: Try to edit "Flight Table" data
+  Test Result: Data is not editable 
+  
+Test Case 2.4: Name 
+  
+  Test Data: Enter letters for Name
+  Test Result: "Insert Order" button enable
+  
+  Test Data: Enter numbers for Name
+  Test Result: "Insert Order" button is disabled
+  
+  Test Data: Enter symbols for Name
+  Test Result: "Insert Order" button is disabled
+  
+Test Case 2.5: Class
 
+  Test Data: Start creating order and Check the class
+  Test Result: Default settings is "Economy"
   
+  Test Data: Switch from "Economy" to "Business" class
+  Test Result: Ticket Price changes accordingly 
   
+  Test Data: Switch from "Business" to "First" class
+  Test Result: Ticket price changed accordingly
+  
+Test Case 2.6: Tickets
+  
+  Test Data: Start creating order. Check the tickets
+  Test Result: Default setting is "1"
+  
+  Test Data: Try enter letters for Tickets and Press "Insert Order Button"
+  Test Result: Error
+  
+  Test Data: Try enter symbols for Tickets and Press "Insert Order Button"
+  Test Result: Error
+  
+  Test Data: Try to enter more than 10 tickets in one order and Press "Insert Order" button
+  Test Result: Error
+  
+Test Case 2.7: Insert Order
+  
+  Test Data: Press "Insert Button"
+  Test Result: Application displays a progress bar and then the final message “Insert Done…”.
    
