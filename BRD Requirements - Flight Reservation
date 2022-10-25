@@ -1,8 +1,6 @@
                                       Requirements for Flight Reservation Application 
                                       -------------------------------------------------
-                                          
-                                          
-
+                                                                          
 1. To login into the application use agent name “bart” and password “mercury”. All
 other agent names &amp; passwords are considered as invalid.
 
@@ -45,13 +43,11 @@ entered or selected.
     during the new order creation. The user can switch the setting from “Economy”
     class to “Business” or “First” and the ticket price is changed accordingly.
 
-10.
-
-  The maximum tickets created for the one order is 10. If more than 10 tickets in 1
-    order, display an error message when the “Insert Order” button is pressed. The
-    “Tickets” field accepts numeric only. If alphabetic or special characters are
-    entered and the “Insert Order” button is pressed, the error message appears.
-    During the order creation the default number of tickets is “1”.
+10. The maximum tickets created for the one order is 10. If more than 10 tickets in 1
+     order, display an error message when the “Insert Order” button is pressed. The
+      “Tickets” field accepts numeric only. If alphabetic or special characters are
+      entered and the “Insert Order” button is pressed, the error message appears.
+      During the order creation the default number of tickets is “1”.
     
     
 11. When “Insert Order” button is pressed the application displays a progress bar and
